@@ -22,7 +22,7 @@ Cost-Effective Labeling Methodology Based on Uncertainty &amp; Active Learning
 
 ![image](https://user-images.githubusercontent.com/79157951/234301523-21c34e0c-94bf-4159-8599-686ae665e05d.png)
 
-1. Train Dataset을 통한 모델 학습(초기 Train Dataset : 17,295개)
+1. Train Dataset을 통한 모델 학습(ResNet50)
 2. 학습한 모델을 통해 Set 1 데이터 Predict 및 Softmax 값 계산
 3. Softmax 값에 따라 데이터별 Uncertainty 계산
 4. Threshold를 기준으로 Auto Labeling or Engineer Labeling 진행
