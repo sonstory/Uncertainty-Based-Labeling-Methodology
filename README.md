@@ -3,6 +3,7 @@ Cost-Effective Labeling Methodology Based on Uncertainty &amp; Active Learning
 
 # Data
 - Kaggle에서 제공하는 실제 제조 현장 46,393개의 lots에서 수집된 811,457개의 반도체 웨이퍼 맵 이미지 데이터셋(WM-811K) 활용
+
 ![image](https://user-images.githubusercontent.com/79157951/234300440-a103ca5b-8679-467f-89f0-09f5d762717a.png)
 
 # Data preprocessing
