@@ -1,5 +1,5 @@
 # Uncertainty-Based-Labeling-Methodology
-Cost-Effective Labeling Methodology Based on Uncertainty &amp; Active Learning
+`Active Learning`은 Unlabeled Data를 순차적으로 Train Dataset에 추가함으로써 모델의 성능을 개선하지 모든 Unlabeled Data를 엔지니어가 Labeling해주어야 한다는 한계점이 있다. 또한 `Reject Option`은 Uncertainty에 기반하기 때문에 엔지니어의 Labeling Cost가 상대적으로 낮지만, 최초 Train Dataset을 통해서만 Model을 학습시키기 때문에 모델 정확도가 상대적으로 낮다. 따라서 이 두 방법론의 한계점을 개선하는 새로운 Uncertainty Based Labeling Methodology를 제안한다.
 
 # Data
 - Kaggle에서 제공하는 실제 제조 현장 46,393개의 lots에서 수집된 811,457개의 반도체 웨이퍼 맵 이미지 데이터셋(WM-811K) 활용
@@ -19,7 +19,7 @@ Cost-Effective Labeling Methodology Based on Uncertainty &amp; Active Learning
 ![image](https://user-images.githubusercontent.com/79157951/234301405-23194ae6-dfcc-49e1-b3bd-74eab5e12658.png)
 
 # Experiment
-
+### 1. Uncertainty Based Labeling Methodology
 ![image](https://user-images.githubusercontent.com/79157951/234301523-21c34e0c-94bf-4159-8599-686ae665e05d.png)
 
 1. Train Dataset을 통한 모델 학습(ResNet50)
@@ -32,6 +32,17 @@ Cost-Effective Labeling Methodology Based on Uncertainty &amp; Active Learning
 4. Threshold를 기준으로 Auto Labeling or Engineer Labeling 진행
 5. 라벨링이 완료된 Set 데이터를 Train Dataset에 추가
 6. Set 데이터별로 1~5번 과정을 반복하여 Unlabeled Data 전체에 대한 라벨링 진행
+
+### 2. Auto Labeling
+- 동일한 초기 데이터셋 17,295개에 대하여 ResNet50 모델을 학습(Epoch 5)
+- unlabeled data 155,655개에 대하여 Auto Labeling 진행
+
+### 3. Reject Option(1,2,3)
+- 동일한 초기 데이터셋 17,295개에 대하여 ResNet50 모델을 학습(Epoch 5)
+- 남은 unlabeled data에 대하여 softmax 값을 계산하여 Threshold를 넘는 데이터는 Auto Labeling, 넘지 못하는 데이터는 Engineer가 직접 라벨링 수행
+
+### 4. Active Learning
+- Writing...
 
 # Result
 ![image](https://user-images.githubusercontent.com/79157951/235137886-a66c202d-6805-4118-b606-6e219dedbf18.png)
