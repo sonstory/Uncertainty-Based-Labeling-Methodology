@@ -23,8 +23,12 @@ Cost-Effective Labeling Methodology Based on Uncertainty &amp; Active Learning
 ![image](https://user-images.githubusercontent.com/79157951/234301523-21c34e0c-94bf-4159-8599-686ae665e05d.png)
 
 1. Train Dataset을 통한 모델 학습(ResNet50)
+- 초기 데이터셋은 17,295개(Epoch 5)
 2. 학습한 모델을 통해 Set 1 데이터 Predict 및 Softmax 값 계산
 3. Softmax 값에 따라 데이터별 Uncertainty 계산
+- `Least Confidence` : Softmax 값 중 최댓값(Threshold : 0.99)
+- `Least Margin` : Softmax 값 중 최댓값과 두번째 최댓값 차이(Threshold : 0.98)
+- `Entropy` : Softmax 값으로 계산한 엔트로피(Threshold : 0.05)
 4. Threshold를 기준으로 Auto Labeling or Engineer Labeling 진행
 5. 라벨링이 완료된 Set 데이터를 Train Dataset에 추가
 6. Set 데이터별로 1~5번 과정을 반복하여 Unlabeled Data 전체에 대한 라벨링 진행
