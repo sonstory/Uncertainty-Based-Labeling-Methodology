@@ -1,5 +1,13 @@
 # Uncertainty-Based-Labeling-Methodology
-`Active Learning`은 Unlabeled Data를 순차적으로 Train Dataset에 추가함으로써 모델의 성능을 개선하지 모든 Unlabeled Data를 엔지니어가 Labeling해주어야 한다는 한계점이 있다. 또한 `Reject Option`은 Uncertainty에 기반하기 때문에 엔지니어의 Labeling Cost가 상대적으로 낮지만, 최초 Train Dataset을 통해서만 Model을 학습시키기 때문에 모델 정확도가 상대적으로 낮다. 따라서 이 두 방법론의 한계점을 개선하는 새로운 Uncertainty Based Labeling Methodology를 제안한다.
+### Related Work 1 : Active Learning
+- Unlabeled Data를 순차적으로 Train Dataset에 추가함으로써 모델의 성능을 개선
+- 모든 Unlabeled Data를 엔지니어가 Labeling해주어야 한다는 한계점 존재 
+
+### Related Work 2 : Reject Option
+- Uncertainty에 기반하기 때문에 엔지니어의 Labeling Cost가 상대적으로 낮음
+- 최초 Train Dataset을 통해서만 Model을 학습시키기 때문에 모델 정확도가 상대적으로 낮음
+
+두 방법론의 한계점을 개선하는 새로운 Uncertainty Based Labeling Methodology를 제안
 
 # Data
 - Kaggle에서 제공하는 실제 제조 현장 46,393개의 lots에서 수집된 811,457개의 반도체 웨이퍼 맵 이미지 데이터셋(WM-811K) 활용
