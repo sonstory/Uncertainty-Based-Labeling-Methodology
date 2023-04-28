@@ -30,17 +30,11 @@ Cost-Effective Labeling Methodology Based on Uncertainty &amp; Active Learning
 6. Set 데이터별로 1~5번 과정을 반복하여 Unlabeled Data 전체에 대한 라벨링 진행
 
 # Result
-### Mislabelings
-![image](https://user-images.githubusercontent.com/79157951/234303748-55883f12-9e4d-4ab2-9259-688bc10b49a8.png)
-![image](https://user-images.githubusercontent.com/79157951/234302464-27b4d69b-37f1-4246-8d88-6ffc93cb0e7c.png)
+![image](https://user-images.githubusercontent.com/79157951/235137886-a66c202d-6805-4118-b606-6e219dedbf18.png)
 
-비교 대상인 Reject Option(1,2,3), Active Labeling, Auto Labeling에 비해 현저히 적은 라벨링 오류의 개수
-
-### Engineer Cost
-![image](https://user-images.githubusercontent.com/79157951/234303023-1e7ee984-2c07-41fc-8123-9b096d6396f6.png)
-![image](https://user-images.githubusercontent.com/79157951/234302929-9fff00c3-50be-4489-b65e-969764ec4667.png)
-
-엔지니어가 직접 라벨링을 해줘야하는 Engineer Cost 또한 비교 대상에 비해 현저히 적은 개수
+Reject Option(1,2,3), Active Learning, Auto Labeling와 비교하였을 때 155,655개의 Unlabeled Data에 대하여
+- 실제 레이블과 큰 차이가 없는 높은 Accuracy
+- 엔지니어가 직접 라벨링을 해줘야하는 Engineer Cost 또한 비교 대상에 비해 현저히 적음
 
 # Conclusion
 - Uncertainty 기반 라벨링 방법론을 통해 반자동화 라벨링 모델 구축
