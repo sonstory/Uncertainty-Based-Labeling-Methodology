@@ -51,7 +51,7 @@
 - 남은 unlabeled data에 대하여 softmax 값을 계산하여 Threshold를 넘는 데이터는 Auto Labeling, 넘지 못하는 데이터는 Engineer가 직접 라벨링 수행
 
 ### 4. Active Learning
-- Uncertainty를 계산하는 과정은 제안하고자 하는 방법론과 동일하며, 이후 엔지니어가 직접 라벨링을 진행하므로 따로 실험을 진행 
+- Uncertainty를 계산하는 과정은 제안하고자 하는 방법론과 동일하며, 이후 엔지니어가 직접 라벨링을 진행하므로 따로 실험 진행 x
 
 # Result
 ![image](https://user-images.githubusercontent.com/79157951/235137886-a66c202d-6805-4118-b606-6e219dedbf18.png)
