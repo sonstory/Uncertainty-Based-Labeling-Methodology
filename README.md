@@ -34,10 +34,11 @@
 - 초기 데이터셋은 17,295개(Epoch 5)
 2. 학습한 모델을 통해 Set 1 데이터 Predict 및 Softmax 값 계산
 3. Softmax 값에 따라 데이터별 Uncertainty 계산
-- `Least Confidence` : Softmax 값 중 최댓값(Threshold : 0.99)
-- `Least Margin` : Softmax 값 중 최댓값과 두번째 최댓값 차이(Threshold : 0.98)
-- `Entropy` : Softmax 값으로 계산한 엔트로피(Threshold : 0.05)
+  - `Least Confidence` : Softmax 값 중 최댓값
+  - `Least Margin` : Softmax 값 중 최댓값과 두번째 최댓값 차이
+  - `Entropy` : Softmax 값으로 계산한 엔트로피
 4. Threshold를 기준으로 Auto Labeling or Engineer Labeling 진행
+- Uncertainty를 계산하는 Least Confidence, Least Margin, Entropy 각각 0.99, 0.98, 0.05의 Threshold를 지정
 5. 라벨링이 완료된 Set 데이터를 Train Dataset에 추가
 6. Set 데이터별로 1~5번 과정을 반복하여 Unlabeled Data 전체에 대한 라벨링 진행
 
@@ -50,7 +51,7 @@
 - 남은 unlabeled data에 대하여 softmax 값을 계산하여 Threshold를 넘는 데이터는 Auto Labeling, 넘지 못하는 데이터는 Engineer가 직접 라벨링 수행
 
 ### 4. Active Learning
-따로 실험 x
+- Uncertainty를 계산하는 과정은 제안하고자 하는 방법론과 동일하며, 이후 엔지니어가 직접 labeling을 진행하므로 따로 실험을 진행하지 않음
 
 # Result
 ![image](https://user-images.githubusercontent.com/79157951/235137886-a66c202d-6805-4118-b606-6e219dedbf18.png)
