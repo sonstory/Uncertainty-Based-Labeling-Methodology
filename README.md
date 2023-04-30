@@ -71,3 +71,5 @@ Reject Option(1,2,3), Active Learning, Auto Labeling와 비교하였을 때 155,
   - data_172950 : WM-811k 데이터셋에서 라벨링이 주어져있는 모든 데이터가 포함된 데이터셋
   - data_17295 : 각 레이블별 비율을 고려해 10%를 추출한 초기 train 데이터셋
   - data_155655 : 전체 172,950개의 데이터에서 초기 데이터 17,295개를 제외한 unlabeled data
+- Model의 경우 본 연구에선 ResNet50을 사용했지만, phase별로 학습을 모두 수행하므로 좀 더 가벼운 모델을 사용하는 것도 좋은 선택이다.
+- Phase별로 Set 데이터를 train data에 추가해 다시 모델을 학습시키는 것과 이미 학습된 model을 통해 Set Data에 대해서만 train을 진행하는 것에 대한 비교도 시도해볼 수 있다.
