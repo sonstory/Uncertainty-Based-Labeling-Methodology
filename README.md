@@ -19,10 +19,10 @@
 - 각 웨이퍼의 크기가 224x224로 통일되도록 스케일링
 - 0:Wafer가 없는 영역/ 1: 양호 Chip / 2 : 불량 chip으로 나눠지도록 [224x224x3] 차원의 이미지 형태로 변경
 
-### Data Segmentation
+### Data Split
 - 172,950장 중 고장 패턴 비율을 고려하여 10%를 추출하고 Train dataset으로 정의
 - 나머지 155,655장의 data는 라벨을 가려 Test data로 사용
-- Test data를 Random하게 9개의 set으로 분할하고 순차적으로 라벨링 진행
+- Test data를 9개의 set으로 분할하고 순차적으로 라벨링 진행
 
 ![image](https://user-images.githubusercontent.com/79157951/234301405-23194ae6-dfcc-49e1-b3bd-74eab5e12658.png)
 
