@@ -24,7 +24,7 @@
 - 나머지 155,655장의 data는 라벨을 가려 Test data로 사용
 - Test data를 9개의 set으로 분할하고 순차적으로 라벨링 진행
 
-![image](https://user-images.githubusercontent.com/79157951/234301405-23194ae6-dfcc-49e1-b3bd-74eab5e12658.png)
+![image](https://user-images.githubusercontent.com/79157951/235341144-fb9ffa2c-85d8-4d39-a93d-33b46814b50b.png)
 
 # Experiment
 ### 1. Uncertainty Based Labeling Methodology
