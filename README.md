@@ -73,5 +73,5 @@ Reject Option(1,2,3), Active Learning, Auto Labeling와 비교하였을 때 155,
   - data_155655 : 전체 172,950개의 데이터에서 초기 데이터 17,295개를 제외한 unlabeled data
 - Model의 경우 본 연구에선 ResNet50을 사용했지만, phase별로 학습을 모두 수행하므로 좀 더 가벼운 모델을 사용하는 것도 좋은 선택이다.
 - phase별 재학습 과정에서 set 데이터가 append된 train dataset 전체를 재학습하는 것과 set data에 대해서만 재학습을 진행하는 것에 대한 고민이 필요하다.
-  - 그러나 overfitting의 관점에서 생각해 보았을 때 모델을 초기화하고 train dataset 전체를 다시 학습하는 것이 나은 방법이라고 판단했다.
+  - overfitting의 관점에서 생각해 보았을 때 모델을 초기화하고 train dataset 전체를 다시 학습하는 것이 나은 방법이라고 판단했다.
   - 또한 labeled data가 충분히 쌓여 모델의 성능이 어느 정도 이상 올라간다면, 굳이 set data를 train dataset에 append하지 않고 auto labeing or engineer labeling만 수행하는 것도 가능하다.
