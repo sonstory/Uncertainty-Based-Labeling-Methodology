@@ -27,7 +27,7 @@
 ![image](https://user-images.githubusercontent.com/79157951/235341144-fb9ffa2c-85d8-4d39-a93d-33b46814b50b.png)
 
 # Experiment
-### 1. Uncertainty Based Labeling Methodology
+### 1. Uncertainty Based Semi-Automated Labeling Methodology
 ![image](https://user-images.githubusercontent.com/79157951/234301523-21c34e0c-94bf-4159-8599-686ae665e05d.png)
 
 1. Train Dataset을 통한 모델 학습(ResNet50)
